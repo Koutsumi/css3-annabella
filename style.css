@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a, a:hover, a:active, a:visited{
+    text-decoration: none;
+    color: black;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a:hover{
+    color: white;
+    transition: 1s;
+}
+
+li, li:hover, li:active, li:visited{
+    list-style: none;
+}
+
+@media (min-width: 320px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    body{
+        width: 100%;
+
+        background-image: url(./fundo.png);
+    }
+
+    main{
+        width: 100%;
+
+        background-color: #f2f2f2;
+    }
+
+    footer{
+        margin: 3% 0;
+
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    nav{
+        display: none;
+    }
+
+}
+
+header img, .photo img{
+    width: 100%;
+}
+
+
+.photo{
+    
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+    
+}
+
+ul{
+    width: 100%;
+    height: 200px;
+
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+
+
+.cel-menu{
+
+    background-color: #c5c5b2;
+
+}
+
+.text, i{
+   
+    margin: 5% 3%;
+    text-align: justify;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.text h2{
+    color: #828271;
+}
+
+@media (min-width: 720px){
+    .container{
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+
+    nav{
+        display:  block;
+    }
+
+    .menu-icon{
+        display: none;
+    }
+
+    ul{
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+    }
+}
